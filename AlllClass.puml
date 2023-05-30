@@ -1,0 +1,59 @@
+@startuml
+class com.example.w23comp1008s1w5memorygame.WarGameController {
+~ Label p1CardCountLabel
+~ Label name1
+~ Label name2
+~ TextField nameText1
+~ TextField nameText2
+~ ImageView p1ImageView
+~ Label p2CardCountLabel
+~ Label winnerLabel
+~ ImageView p2ImageView
+~ Button playButton
+~ Label pullCardCountLabel
+~ Button playAgainButton
+~ Deque<Card> p1Hand
+~ Deque<Card> p2Hand
+~ Deque<Card> cardPile
++ void inputName(ActionEvent)
+~ void newGame()
+~ void playHand()
+~ void playWarHand()
+~ void declareWinner(String)
++ void initialize(URL,ResourceBundle)
+~ Object updateLabels()
+}
+class com.example.w23comp1008s1w5memorygame.Card {
+- String faceName
+- String suit
+- LinkedList<Card> deque
++ String getFaceName()
++ void setFaceName(String)
++ String getSuit()
++ void setSuit(String)
++ {static} List<String> getValidFaceNames()
++ {static} List<String> getValidSuits()
++ int getCardValue()
++ Image getImage()
+}
+class com.example.w23comp1008s1w5memorygame.DeckOfCards {
+- LinkedList<Card> deck
++ Card dealTopCard()
++ void shuffle()
++ int getNumOfCardsInDeck()
+}
+class com.example.w23comp1008s1w5memorygame.Main {
++ void start(Stage)
++ {static} void main(String[])
+}
+class com.example.w23comp1008s1w5memorygame.Rules {
++ Button playWar
++ Label rules
++ void initialize()
+~ void playWar(ActionEvent)
+}
+
+
+javafx.fxml.Initializable <|.. com.example.w23comp1008s1w5memorygame.WarGameController
+javafx.application.Application <|-- com.example.w23comp1008s1w5memorygame.Main
+@enduml
