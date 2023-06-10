@@ -1,7 +1,6 @@
 # Программный продукт "Карточная игра Волна"
 В рамках данного курсового проект была разработана программа "Карточная игра Война", которая позволит карточным любителям весело провести время.
 
-С её помощью возможны: добавление/редактирование/удаление задач, детализация задач на подзадачи, а подзадачи на пункты, просмотр задач по дате, работа с подзадачами и пунктами.
 Также для приложения были сгенерированы javadocs, с которыми можно ознакомится в [папке](https://github.com/nikivikim/game/tree/master/JavaDoc). 
 
 **Функционал приложения:**
@@ -26,12 +25,15 @@
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/nikivikim/game/blob/master/src/main/rules.png">
 </p>
+
 Скриншот окна начала игры
 ---
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/nikivikim/game/blob/master/src/main/gamestart.png">
 </p>
+
 Скриншот окна окончания игры
+
 ---
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/nikivikim/game/blob/master/src/main/gameend.png">
