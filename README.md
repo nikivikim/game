@@ -32,8 +32,8 @@
     <img width="60%" src="https://github.com/nikivikim/game/blob/master/src/main/gamestart.png">
 </p>
 
-Скриншот окна окончания игры
 
+Скриншот окна окончания игры
 ---
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/nikivikim/game/blob/master/src/main/gameend.png">
